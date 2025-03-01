@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="font-sans tracking-[0.1em]">
+     <nav class="bg-black max-h-full h-16 w-auto text-white flex justify-between items-center list-none">
+        <div class="pl-10 font-bold text-3xl">Car Rental</div>
+        <div id="nav-pro" class="flex gap-6 pr-7">
+            <li><a class="hover:text-red-500  p-1" href="index.html">HOME</a></li>
+            <li><a class="hover:text-red-500  p-1" href="">ABOUT</a></li>
+            <li><a class="hover:text-red-500  p-1" href="/index2.html">CARS</a></li>
+            <li><a class="hover:text-red-500  p-1" href="/index3.html">BOOKING</a></li>
+        </div>
+    </nav> 
+   
+<!-- <body class="bg-gray-100"> -->
+
+  <div class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-3xl font-semibold text-center mb-8">Car Rental Registration</h2>
+    <form action="#" method="POST">
+      <div id="form" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Full Name -->
+        <div>
+          <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+          <input type="text" id="full-name" name="full_name" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your full name">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+          <input type="email" id="email" name="email" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your email">
+        </div>
+
+        <!-- Phone -->
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter your phone number">
+        </div>
+
+        <!-- Pickup Location -->
+        <div>
+          <label for="pickup-location" class="block text-sm font-medium text-gray-700">Pickup Location</label>
+          <input type="text" id="pickup-location" name="pickup_location" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter the pickup location">
+        </div>
+
+        <!-- Drop-off Location -->
+        <div>
+          <label for="dropoff-location" class="block text-sm font-medium text-gray-700">Drop-off Location</label>
+          <input type="text" id="dropoff-location" name="dropoff_location" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter the drop-off location">
+        </div>
+
+        <!-- Car Model -->
+        <div>
+          <label for="car-model" class="block text-sm font-medium text-gray-700">Car Model</label>
+          <select id="car-model" name="car_model" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="" disabled selected>Select a car model</option>
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="truck">Truck</option>
+            <option value="coupe">Coupe</option>
+          </select>
+        </div>
+
+        <!-- Rental Dates -->
+        <div>
+          <label for="pickup-date" class="block text-sm font-medium text-gray-700">Pickup Date</label>
+          <input type="date" id="pickup-date" name="pickup_date" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <div>
+          <label for="dropoff-date" class="block text-sm font-medium text-gray-700">Drop-off Date</label>
+          <input type="date" id="dropoff-date" name="dropoff_date" required class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="col-span-2">
+          <label for="comments" class="block text-sm font-medium text-gray-700">Additional Comments</label>
+          <textarea id="comments" name="comments" rows="4" class="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter any special requests or notes"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-span-2 flex justify-center mt-6">
+          <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            Register
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
