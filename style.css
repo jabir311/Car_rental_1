@@ -154,19 +154,20 @@ gap: 10px;
 
 }
 #box1{
-  height: 300px;
+  height: 250px;
   width: 250px;
  }
  #box2{
-  height: 300px;
+  height: 250px;
   width: 250px;
  }
  #box3{
-  height: 300px;
+  height: 250px;
   width: 250px;
  }
  #why{
-    height: 80vh;
+  height: auto;
+    height: 60vh;
     width: 100%;
  }
  
@@ -223,12 +224,12 @@ gap: 10px;
 }
 .h-100{
   height: auto;
-    min-height: 60vh;
+    min-height: 50vh;
      width: 100%;
 }
 .h-77{
   height: auto;
-      min-height: 50vh;
+      min-height: 40vh;
        width: 100%;
  
 }
@@ -290,6 +291,18 @@ gap: 10px;
      overflow-y: hidden;
      column-gap: 10px;
      }
+     #box1{
+      height: 250px;
+      width: 250px;
+     }
+     #box2{
+      height: 250px;
+      width: 250px;
+     }
+     #box3{
+      height: 250px;
+      width: 250px;
+     }
     ::-webkit-scrollbar{
       width: 0;
     }
@@ -337,9 +350,13 @@ gap: 10px;
    #form{
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
   } 
   .pl-10 {
-    padding-left: 2px;
+    padding-left: 0;
+    font-size: 0;
+    
   }
 
 }
